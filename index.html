@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="PT-BR" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Ana Luiza</title>
+  <meta name="description" content="Portifólio ">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!--CABECALHO E NAVEGADOR DE LINKS-->
+  <header class="header">
+    <!--LOGO DO PORTIFÓLIO (AUTORAL)-->
+    <div class="header__brand">
+      <a href="#home">
+        <img class="brand__logo" src="assets/images/logotipo-(nalu.).png" alt="Logo by nalu">
+      </a>
+    </div>
+
+    <nav class="header__nav">
+      <!--LINKS-->
+    <ul class="menu menu--principal">
+
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <span class="menu__text">Contato</span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+  
+    <!--ICON MUDAR TEMA-->
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-brightness-high-fill"></i>
+    </div>
+  </header>
+
+  <!--LINKS PARA NAVEGADORES EM DISPOSITIVOS MOBILE-->
+  <nav class="nav--mobile">
+
+    <ul class="menu menu--mobile">
+        <!--LINKS-->
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
+          <span class="menu__text">Contato</span>
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+
+  <!--CONTEUDO PRINCIPAL - PORTIFÓLIO-->
+  <main id="home">
+    <div class="main__content1">
+        <!--TITULO E INFORMACOES PESSOAIS-->
+      <h1><strong>Experiências Digitais</strong><br>Seja bem-vindo(a)!</h1>
+      <p>Ana Luiza, Pedro II-PI, Graduanda em Análise e Desenvolvimento de Sistemas (ADS).</p> 
+
+      <!--REDES SOCIAIS PARA CONTATO-->
+      <ul class="menu menu--social">
+
+        <li>
+          <a class="menu__link" href="https://github.com/analuizaIF" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/ana-luiza-de-brito-gomes/" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+
+      <!--BOTAO VER PROJETOS (SABER MAIS)-->
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-down-right-circle-fill"></i>
+        </button>  
+      </a>
+
+    </div>
+
+    <!--VIDEO PESSOAL P/ PORTIFOLIO-->
+    <div class="main__content2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jzQ8YrQxvrU?si=bK5jYxPssdKhpvvK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </main>
+
+  <!--SECOES PORTIFOLIO (TECNOLOGIAS/PROJETOS/SOBRE MIM/CONTATOS)-->
+
+  <!--TECNOLOGIAS-->
+  <section class="technologies">
+    <h2>Conhecimento nas principais tecnologias do mercado</h2>
+    <ul class="technologies__list">
+
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/" alt="Logo ">
+      </li>
+
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/" alt="Logo ">
+      </li>
+
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/" alt="Logo ">
+      </li>
+
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/" alt="Logo ">
+      </li>
+
+    </ul>
+  </section>
+
+  <!--PROJETOS REALIZADOS-->
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+
+    <!--LINK P/ TODOS OS PROJETOS-->
+    <a href="https://github.com/analuizaIF">
+      <button class="btn btn--primary">
+        <span>Ver Todos os Projetos</span>
+        <i class="bi bi-github"></i>
+      </button>  
+    </a>
+
+    <div class="projects__container">
+        <!--PROJETO UM-->
+      <div class="projects__card">
+        <!--IMAGEM DO PROJETO-->
+        <img data-fancybox class="card__cover" src="assets/images/portifolio.png"" alt="">
+
+        <!--EXPLICACAO PROJETO-->
+        <div class="card__body">
+          <h3 class="card__title">Spider Man | Multiverse</h3>
+          <p class="card__description">Site que explora o conceito de multiversos do Homem-Aranha, utilizando HTML, CSS e JavaScript.</p>
+
+          <!--TOPICOS DO PROJETO-->
+          <ul class="card__list">
+            <li class="card__item">Listagem de favoritos;</li>
+            <li class="card__item">Carrinho de compras;</li>
+            <li class="card__item">Filtragem por preço e categoria.</li>
+          </ul>
+
+          <!--TECNOLOGIAS USADAS NO PROJETO-->
+          <ul class="technologies__list">
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+          </ul>
+
+          <!--BOTAO PARA SABER MAIS - PROJETO-->
+          <div class="card__buttons">
+
+            <!--PREVIA-->
+            <button class="btn btn--primary">
+              <span>Prévia</span>
+              <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </button>  
+
+            <!--LINK DO REPOSITORIO-->
+            <button class="btn">
+              <span><a href="https://github.com/analuizaIF/spider-man-multiverses-DIO/tree/spider-multiverse">Repositório</a></span>
+            </button>  
+
+          </div>
+        </div>
+      </div>
+
+      <!--PROJETO (REVERSE TELA)-->
+      <div class="projects__card card--reverse">
+        <img data-fancybox class="card__cover" src="assets/images/test.jpg"" alt="">
+
+
+        <div class="card__body card--reverse-project">
+          <h3 class="card__title">Stranger Things</h3>
+          <p class="card__description">Página com theme switcher utilizando HTML, CSS e JavaScript, além de integrar um formulário de inscrição com um banco de dados Firebase.</p>
+
+          <ul class="card__list">
+            <li class="card__item">Postagens relacionadas e em destaque;</li>
+            <li class="card__item">Filtragem por tags e categorias;</li>
+            <li class="card__item">Biografia do autor.</li>
+          </ul>
+
+          <ul class="technologies__list">
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+          </ul>
+
+          <div class="card__buttons">
+
+            <button class="btn btn--primary">
+              <span>Prévia</span>
+              <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </button>  
+
+            <button class="btn">
+              <span><a href="">Repositório</a></span>
+            </button>  
+
+          </div>
+        </div>
+      </div>
+
+      <!--ULTIMO PROJETO-->
+      <div class="projects__card">
+        <img data-fancybox class="card__cover" src="assets/images/test.jpg" alt="">
+
+        <div class="card__body">
+          <h3 class="card__title">Jogo da Memória</h3>
+          <p class="card__description">Um jogo da memória criado com JS</p>
+
+          <ul class="card__list">
+            <li class="card__item">Listagem de favoritos;</li>
+            <li class="card__item">Carrinho de compras;</li>
+            <li class="card__item">Filtragem por preço e categoria.</li>
+          </ul>
+
+          <ul class="technologies__list">
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/" alt="">
+            </li>
+
+          </ul>
+
+          <div class="card__buttons">
+
+            <button class="btn btn--primary">
+              <span>Prévia</span>
+              <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </button>
+
+            <button class="btn">
+              <span><a href="https://github.com/analuizaIF/js-emoji-memory-game">Repositório</a></span>
+            </button>  
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SECAO SOBRE MIM-->
+  <section id="sobre" class="about">
+
+    <!--FOTO PROFISSIONAL PESSOAL-->
+    <div class="about__content1">
+      <img class="about__photo" src="assets/images/test.jpg"" alt="Imagem sobre a Ana Luiza">
+
+      <!--DESCRICACAO SOBRE MIM-->
+      <div class="about__description">
+        <h2>Sobre mim</h2>
+        <p>Olá! Sou Ana Luiza, estudante de Análise e Desenvolvimento de Sistemas no Instituto Federal, apaixonada por tecnologia e pelo impacto positivo que a programação pode trazer para a sociedade. Tenho experiência com Python e JavaScript, com projetos que incluem o desenvolvimento de sistemas de cadastro com Flask e SQLite, além de jogos 2D em Java. Recentemente, participei de um bootcamp de front-end na Digital Innovation One (DIO), onde aprimorei minhas habilidades com HTML, CSS e React, desenvolvendo aplicações </p>  
+
+        <!--IDIOMAS/LINGUAS-->
+        <div class="about__icons">
+          <i class="bi bi-translate"></i>
+          <span>Inglês: Intermediário</span>
+        </div>
+
+        <div class="about__icons">
+            <i class="bi bi-translate"></i>
+            <span>Libras: Básico</span>
+          </div>
+
+        <!--CONTATE-ME-->
+        <div class="description__buttons">
+            <!--LINK DO LINKED-->
+          <a href="https://www.linkedin.com/in/ana-luiza-de-brito-gomes/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Conecte-se Comigo</span>
+              <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </button> 
+          </a>
+
+          <!--CURRICULO BY LINKEDIN-->
+          <a href="">
+            <button class="btn">
+              <span>Currículo</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--FORMACOES E CURSOS-->
+    <div class="about__content2">
+      <div class="col1">
+        <!--FORMACAO ACADEMICA ENS.SUPERIOR-->
+        <div class="row1">
+          <h3>Formação</h3>
+          <h4>Analise e Desenvolvimento de Sistemas</h4>
+          <span>2023 - Atualmente</span>
+
+          <!--ICON INSTITUICAO-->
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>IFPI</span>
+          </div>
+
+          <div class="about__icons">
+            <i class="bi bi-mortarboard"></i>
+            <span>Graduanda</span>
+          </div>
+
+          <!--FORMACAO ENS MEDIO-->
+          <br>
+          <h4>Técnico em Informática</h4>
+          <span>2020 - 2022</span>
+
+          <!--ICON INSTITUICAO-->
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>IFPI</span>
+          </div>
+
+          <div class="about__icons">
+            <i class="bi bi-mortarboard"></i>
+            <span>Ens. Médio Completo</span>
+          </div>
+        </div>
+
+        <!--EXPERIENCIA MERCADO TRABALHO-->
+        <div class="row2">
+          <h3>Experiências</h3>
+          <h4>Vendedora</h4>
+          <span>Out. 2024 - Atualmente</span>
+          
+          <span>Trabalhando como vendedora em uma loja de confecções localmente</span>
+
+          <ul class="about__list">
+            <i class="bi bi-people"></i> 
+            <span class="about__item">Atendimento ao público;</span>
+            <br>
+
+            <i class="bi bi-shop-window"></i>
+            <span class="about__item">Organização e reposição de estoque;</span>
+            <br>
+
+            <i class="bi bi-person-badge"></i> 
+            <span class="about__item">Atendimento personalizado.</span>
+            <br>
+          </ul>
+
+        </div>
+      </div>
+
+      <!--CURSOS REALIZADOS-->
+      <div class="col2">
+        <h3>Cursos</h3>
+        <div id="accordion">
+            <!--CURSO UM-->
+          <div class="accordion__item active">
+            <!--BOTAO CURSO - TOPICO RESPONSIVO-->
+            <button class="accordion__header start">
+              <span>BootCamp Front-End da DIO</span>
+              <i class="bi bi-caret-down-square-fill"></i>
+            </button>
+
+            <!--DESCRICAO DO CURSO-->
+            <div class="accordion__body">
+              <p>Digital Innovation One. 2024. 75H.</p>
+              <p>Desenvolvimento Front-End com HTML, CSS e JAVASCRIPT, com uma base estruturada de conteúdos e 10 projetos práticos, incluindo páginas web responsivas e dinâmicas com temática do Stranger Things, Spider Man, Yu-Gi-Oh e mais!</p>
+            </div>
+          </div>
+
+          <!--CURSO DOIS-->
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Contribuindo projetos</span>
+              <i class="bi bi-caret-down-square-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. Fev 2023. 1h.
+              </p>
+              <p>
+                Lab prático sobre colaboração em projetos de código aberto.
+              </p>
+            </div>
+          </div>
+
+          <!--CURSO TRES-->
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Organizando</span>
+              <i class="bi bi-caret-down-square-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Digital Innovation One. Fev 2023. 2h.
+              </p>
+              <p>
+                Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion.
+              </p>
+            </div>
+          </div>
+
+        </div>
+  </section>
+  
+  <!--CONTATOS-->
+  <section id="contato" class="contact">
+    <h2>Contate-me</h2>
+
+    <!--REDES SOCIAIS-->
+    <ul class="menu menu--social">
+      <li>
+        <a class="menu__link" href="https://github.com/analuizaIF" target="_blank">
+          <i class="menu__icon bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+
+      <li>
+        <a class="menu__link" href="https://www.linkedin.com/in/ana-luiza-de-brito-gomes/" target="_blank">
+          <i class="menu__icon bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+    </ul>
+
+    <p>Estou disponível para serviços e novas conexões.</p>
+     <p>contate-me via e-mail e conecte-se comigo através das minhas redes sociais.</p>
+
+    <!--EMAIL-->
+    <a href="analuizabrito.gs@gmail.com">
+      <button class="btn btn--primary">
+        <span class="email">analuizabrito.gs@gmail.com</span>
+      </button>  
+    </a>
+
+  </section>
+
+  <footer>
+    <p>
+      © 2024. Todos os direitos reservados por <a href="https://github.com/analuizaIF" target="_blank"><strong>NALU.</strong></a>
+    </p>
+  </footer>
+
+  <script src="assets/js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</body>
+</html>

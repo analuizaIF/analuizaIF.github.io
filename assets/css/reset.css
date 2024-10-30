@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg-color) transparent;
+  }
+  
+  *::selection{
+    background-color: #E8985E;
+    color: black;
+  }
