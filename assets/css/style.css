@@ -1,5 +1,5 @@
 /*FONTES*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Radley:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('reset.css');
 
 /*VARIAVEIS P/ MUDANCAS DE TEMA*/
@@ -7,28 +7,37 @@
   --primary-color: #E6EED6;
 
   --primary-bg-color: #212121;
-  --secondary-bg-color:  #BBC5AA;
+  --secondary-bg-color:linear-gradient(
+    to right, #212121 0%, 21.12211287021637%,
+    #bbc5aab7 42.24422574043274%, 71.12211287021637%,
+    #212121 100%);
+
   --primary-border-color: #E8985E;
   --secondary-border-color: #E8985E;
 
   --title-color: #F4FFF8;
   --text-color: #F4FFF8 ;
   --link-color: #1C3738;
-  --icon-color: #A72608;
+  --icon-color: #E8985E;
 }
 
 :root[data-theme='light'] {
   --primary-color: #212121;
 
 	--primary-bg-color: #DDE2C6;
-	--secondary-bg-color: #BB9457;
+	--secondary-bg-color: linear-gradient(
+    to right, #BB9457 0%, 25.247035573122528%, 
+    #dde2c6dd 50.494071146245055%, 75.24703557312253%, 
+    #BB9457 100%);
+  
+
 	--primary-border-color: #E8985E;
 	--secondary-border-color: #E8985E;
 
 	--title-color: #6F1D1B;
 	--text-color: #090C02;
 	--link-color: #A9714B;
-	--icon-color: #A72608;
+	--icon-color: #6F1D1B;
 }
 
 /*ELEMENTO IMG LOGO PESSOAL*/
@@ -76,7 +85,7 @@ i {
 
 strong {
   font-weight: 400;
-  color: #A9714B;
+  color: #E8985E;
 }
 
 /*TITULOS R PARAGRAFOS*/
@@ -116,6 +125,7 @@ p, span, li {
 
 p {
   text-align: justify;
+  font-family: 'poppins',sans-serif;
 }
 
 /*CONTEUDO CABECALHO*/
@@ -135,8 +145,8 @@ p {
 }
 
 .header__brand .brand__logo {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 5.90rem;
+  padding-top: 5px;
 }
 
 #toggleTheme {
@@ -155,7 +165,7 @@ p {
 
 .menu__item {
   width: 100%;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .menu__link {
@@ -320,13 +330,6 @@ main {
 }
 
 /*SECAO DE PROJETOS*/
-
-/*
-.card--reverse-project{
-  justify-content: flex-end;
-  text-align: right;
-}
-*/
 .projects {
   display: flex;
   flex-direction: column;
@@ -424,7 +427,7 @@ main {
   object-fit: cover;
   object-position: center;
   pointer-events: none;
-  border-radius: 50rem;
+  border-radius: 50%;
   border: 1px solid var(--primary-border-color);
 }
 
@@ -661,14 +664,17 @@ footer p {
   }
 
   .technologies {
-    flex-direction: row;
     justify-content: space-between;
     padding: 10rem 6rem 4rem;
   }
 
   .technologies h2 {
     font-size: 3rem;
-    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
   }
 
   .technologies__list {
@@ -717,7 +723,7 @@ footer p {
   }
   
   .technologies, .projects, .about {
-    padding: 6rem 15rem 4rem;
+    padding: 8rem 15rem 4rem;
   }
 
 }
