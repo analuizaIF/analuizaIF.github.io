@@ -1,0 +1,101 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: wheat;
+  user-select: none;
+  background-color: wheat;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(
+    325deg,
+    #2B332D 0%,
+    #35503D 30%,
+    #23CF54 70%,
+    #fdeff9 100%
+  );
+  padding: 20px 60px;
+  border-radius: 24px;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.reset {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 15px 20px;
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 14px;
+}
+
+.reset:focus {
+  color: white;
+  background-color: black;
+}
+
+.game {
+  width: 430px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+
+  font-size: 3em;
+  transform: rotateY(180deg);
+  transition: 0.25s;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #A6A884;
+  /* opacity: 0.85; */
+  transition: 0.25s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+
+.item.boxOpen {
+  transform: rotateY(0deg);
+}
+
+.boxOpen::after,
+.boxMatch::after {
+  transform: rotateY(180deg);
+}
