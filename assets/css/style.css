@@ -79,6 +79,16 @@ a:hover {
   color: var(--primary-color);
 }
 
+.link-prototipos{
+  color: var(--icon-color);
+}
+
+.link-prototipos:hover{
+  color: var(--icon-color);
+  font-weight: 600;
+  transition: ease-in-out .5s;  
+}
+
 i {
   color: var(--icon-color);
 }
@@ -113,12 +123,14 @@ h4 {
 }
 
 h1, h2, h3 {
-  font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   color: var(--title-color);
   font-weight: 200;
 }
 
+h2, h3{
+  font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+}
 p, span, li {
   font-size: 1rem;
 }
@@ -266,6 +278,7 @@ p {
   background-color: rgb(187, 148, 87, 0.65);
   transition: ease-in 0.5s;
 }
+
 /*ESTILIZACAO DO CONTEUDO PRINCIPAL*/
 main, .projects, .about, .contact {
   padding: 2.5rem 1rem;
