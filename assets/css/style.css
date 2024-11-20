@@ -733,10 +733,11 @@ footer p {
 
   main {
     padding: 9rem 15rem 2rem;
+    margin-bottom: 130px;
   }
   
   .technologies, .projects, .about {
-    padding: 8rem 15rem 4rem;
+    padding: 8rem 15rem 9rem;
   }
 
 }
